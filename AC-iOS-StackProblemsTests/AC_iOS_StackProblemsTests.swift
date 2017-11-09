@@ -82,6 +82,7 @@ class AC_iOS_StackProblemsTests: XCTestCase {
         XCTAssertFalse(isBalanced(str: "((())"))
         XCTAssertTrue(isBalanced(str: "(()((())()))"))
         XCTAssertTrue(isBalanced(str: "(()((())(())))"))
+        XCTAssertFalse(isBalanced(str: "))))(((("))
     }
     
     func testConvertToBinary() {
